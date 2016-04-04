@@ -1,0 +1,22 @@
+group 'com.markgravestock'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.joda:joda-money:0.11'
+    compile 'org.apache.commons:commons-lang3:3.4'
+    testCompile 'org.jbehave:jbehave-core:4.0.5'
+    testCompile 'org.mockito:mockito-core:1.+'
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
